@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imgs/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Simulador de Juros</title>
+</head>
+<body>
+
+    <section class="container display-branco">
+        <img src="./assets/imgs/icon.png" alt="Mão direta segurando uma bolsa com dinheiro, simbolizando o crédito seguro">
+        <h1>Calcule os juros do seu empréstimo</h1>
+        <p>Em até 6x sem juros!!</p>
+
+        <div class="form">
+            <div class="input">
+                <label for="montante">Qual valor do empréstimo?</label>
+                <input type="text" inputmode="numeric" maxlength="7" id="montante" name="Montante" placeholder="escreva aqui!" ><br>
+            </div>
+
+            <div class="input">
+                <label for="prazo">Qual será o tempo de parcelamento?</label>
+                <p>O parcelamento pode ser realizado em até 32x</p>
+                <input type="text" inputmode="numeric" maxlength="2" id="prazo" name="Prazo" placeholder="" ><br>
+            </div>
+            
+            <button onclick="calcularEmprestimo()">Calcular</button>
+
+            <section class="container">
+                <div class="resultado"></div>
+            </section>
+
+            <div id="alertErro" class="animate__animated "></div>
+
+            <script src="assets/js/script.js"></script>
+        </div>
+    </section>
+</body>
+</html>
